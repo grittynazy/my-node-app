@@ -1,7 +1,8 @@
-import chai, { expect } from 'chai';
+import { expect } from 'chai';
 import chaiHttp from 'chai-http';
 import app from '../index.js';
 
+import chai from 'chai';
 chai.use(chaiHttp);
 
 describe('GET /', () => {
