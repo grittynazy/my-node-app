@@ -1,7 +1,7 @@
 {
   "name": "my-node-app",
   "version": "1.0.0",
-  "description": "Simple Node.js app with tests",
+  "description": "A simple Node.js app with Express and tests",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -17,7 +17,7 @@
   "devDependencies": {
     "chai": "^5.2.0",
     "chai-http": "^5.1.2",
-    "mocha": "^11.6.0"
+    "mocha": "^11.2.0"
   }
 }
 
