@@ -1,14 +1,16 @@
-const express = require('express');
+import express from 'express';
+
 const app = express();
-const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`App listening at http://localhost:${port}`);
 });
 
-export default app; // export for test
+// Export the app for testing
+export default app;
 

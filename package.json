@@ -1,9 +1,9 @@
 {
   "name": "my-node-app",
   "version": "1.0.0",
-  "type": "module",
-  "description": "",
+  "description": "Simple Node.js app with tests",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node index.js",
     "test": "mocha"
@@ -20,4 +20,5 @@
     "mocha": "^11.6.0"
   }
 }
+
 
