@@ -22,7 +22,7 @@ jobs:
 
       - name: Deploy to EC2
         run: |
-          ssh ubuntu@<your-ec2-public-ip> << 'EOF'
+          ssh ubuntu@52.204.101.69 << 'EOF'
             cd my-node-app
             git pull origin main
             npm install
