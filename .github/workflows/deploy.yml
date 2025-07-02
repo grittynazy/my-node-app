@@ -26,6 +26,12 @@ jobs:
             cd my-node-app
             git pull origin main
             npm install
-            pm2 restart all
+            # Install pm2 if not present
+            if ! command -v pm2 &> /dev/null
+            then
+              sudo npm install -g pm2
+            fi
+            pm2 restart all || pm2 start server.js
           EOF
+
 
