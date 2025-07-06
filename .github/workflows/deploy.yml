@@ -18,11 +18,11 @@ jobs:
           mkdir -p ~/.ssh
           echo "${{ secrets.EC2_SSH_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -H 52.204.101.69 >> ~/.ssh/known_hosts
+          ssh-keyscan -H 3.93.179.251 >> ~/.ssh/known_hosts
 
       - name: Deploy to EC2
         run: |
-          ssh ubuntu@52.204.101.69 << 'EOF'
+          ssh ubuntu@3.93.179.251 << 'EOF'
             cd my-node-app
             git pull origin main
             npm install
