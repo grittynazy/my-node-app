@@ -27,8 +27,8 @@ jobs:
         run: npm install
 
       - name: Run Linter
-  if: matrix.node-version == '18.x'
-  run: npx eslint .
+    if: matrix.node-version == '18.x'
+    run: npx eslint .
 
       - name: Run tests
         run: npm test
