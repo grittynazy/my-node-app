@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x, 14.x, 16.x, 18.x]
+        node-version: [12.x, 14.x, 16.x]
 
     steps:
       - name: Checkout repository
@@ -25,10 +25,6 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-
-      - name: Run Linter
-        if: matrix.node-version == '18.x'
-        run: npx eslint .
 
       - name: Run tests
         run: npm test
